@@ -1,0 +1,38 @@
+.container {
+	width: 640px;
+	margin: 0 auto;
+}
+
+main {
+	display: flex;
+}
+
+.news {
+	li {
+		display: flex;
+		margin-bottom: 24px;
+	}
+}
+
+.content {
+	width: 288px;
+	padding: 0 20px;
+
+	h2 {
+		font-size: 20px;
+		line-height: 1.2;
+	}
+	p {
+		line-height: 1.5;
+		text-align: justify;
+	}
+}
+
+footer {
+	padding: 48px 0;
+	text-align: center;
+	background-color: lightgray;
+	p {
+		line-height: 1.5;
+	}
+}

@@ -1,0 +1,93 @@
+.banner {
+	.name {
+		margin-top: 160px;
+	}
+
+	h2 {
+		font-size: 128px;
+		line-height: 192px;
+		letter-spacing: 15.36px;
+		// vertical-align: baseline;
+	}
+
+	img {
+		margin: 0 auto;
+	}
+
+	.title {
+		text-align: right;
+	}
+}
+
+.intro {
+	padding: 48px 0;
+	background: #efefef;
+
+	.desc {
+		width: 636px;
+		margin-left: auto;
+
+		font-size: 32px;
+		line-height: 48px;
+	}
+}
+
+.about {
+	width: 636px;
+	margin-top: 80px;
+	margin-bottom: 160px;
+	& > li:not(:last-child) {
+		margin-bottom: 40px;
+	}
+
+	li {
+		font-size: 24px;
+		line-height: 36px;
+	}
+
+	h3 {
+		margin-bottom: 16px;
+
+		color: #ae0000;
+		font-size: 40px;
+		line-height: 60px;
+		border-bottom: 3px solid #ae0000;
+	}
+
+	.time {
+		color: #949494;
+		font-size: 20px;
+		font-style: italic;
+		line-height: 30px;
+	}
+}
+
+.mt-8 li:not(:first-child) {
+	margin-top: 12px;
+}
+
+.mt-12 li:not(:first-child) {
+	margin-top: 12px;
+}
+
+.mt-16 li:not(:first-child) {
+	margin-top: 16px;
+}
+
+footer {
+	padding: 64px 0;
+	background-color: #000;
+}
+
+.socialbtns {
+	text-align: center;
+
+	li {
+		display: inline-block;
+		// width: 64px;
+
+		&:not(:last-child) {
+			margin-right: 40px;
+		}
+	}
+}
