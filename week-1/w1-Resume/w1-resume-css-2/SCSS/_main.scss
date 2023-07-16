@@ -29,14 +29,25 @@
 	}
 
 	h3 {
-		border-bottom: 3px solid #ae0000;
+		border-bottom: 3px solid $dark-red;
 		margin-bottom: 16px;
 	}
 }
 
-.content li {
-	&:not(:first-child) {
-		margin-top: 12px;
+.content {
+	li {
+		a {
+			text-decoration: none;
+			color: #000;
+
+			&:hover {
+				color: $dark-red;
+			}
+		}
+
+		&:not(:first-child) {
+			margin-top: 12px;
+		}
 	}
 }
 
@@ -58,6 +69,7 @@ footer {
 
 .social-btn {
 	display: inline-block;
+
 	&:not(:last-child) {
 		margin-right: 40px;
 	}

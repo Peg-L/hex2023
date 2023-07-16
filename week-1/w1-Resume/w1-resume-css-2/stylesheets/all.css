@@ -139,21 +139,6 @@ img {
   height: auto;
 }
 
-body {
-  font-family: Castoro;
-}
-
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-}
-
-.container {
-  width: 1296px;
-  margin: 0 auto;
-}
-
 .fz-1 {
   font-size: 128px;
 }
@@ -182,8 +167,23 @@ body {
   letter-spacing: 15.36px;
 }
 
-.red {
+.text-red {
   color: #ae0000;
+}
+
+body {
+  font-family: Castoro;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+.container {
+  width: 1296px;
+  margin: 0 auto;
 }
 
 .banner {
@@ -219,6 +219,13 @@ body {
   margin-bottom: 16px;
 }
 
+.content li a {
+  text-decoration: none;
+  color: #000;
+}
+.content li a:hover {
+  color: #ae0000;
+}
 .content li:not(:first-child) {
   margin-top: 12px;
 }
