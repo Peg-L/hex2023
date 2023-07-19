@@ -298,7 +298,7 @@ body {
 }
 
 .intro {
-  background-image: url("../images/background-img.png");
+  background: no-repeat center center/cover url("../images/background-img.png");
 }
 
 .intro-content {
