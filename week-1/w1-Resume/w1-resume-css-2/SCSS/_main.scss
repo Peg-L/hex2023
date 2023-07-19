@@ -46,7 +46,25 @@
 		}
 
 		&:not(:first-child) {
-			margin-top: 12px;
+			margin-top: 16px;
+		}
+	}
+}
+
+.about-list {
+	&:first-child {
+		.content li {
+			&:not(:first-child) {
+				margin-top: 8px;
+			}
+		}
+	}
+
+	&:last-child {
+		.content li {
+			&:not(:first-child) {
+				margin-top: 12px;
+			}
 		}
 	}
 }

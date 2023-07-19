@@ -3,18 +3,14 @@
 }
 
 .h2 {
-	font-size: 40px;
+	font-size: 64px;
 }
 
-.fz-1 {
-	font-size: 32px;
-}
-
-.fs-2 {
+.fs-1 {
 	font-size: 24px;
 }
 
-.fs-3 {
+.fs-2 {
 	font-size: 20px;
 }
 
@@ -24,6 +20,10 @@
 
 .text-white {
 	color: $white;
+}
+
+.text-gray {
+	color: $gray;
 }
 
 .text-black-1 {
@@ -36,4 +36,37 @@
 
 .text-green {
 	color: $green;
+}
+
+.text-align-right {
+	text-align: right;
+}
+
+.bg-black {
+	background-color: $black-1;
+}
+
+.bg-white {
+	background-color: $white;
+}
+
+.d-flex {
+	display: flex;
+}
+
+.justify-content-between {
+	justify-content: space-between;
+}
+
+.align-items-center {
+	align-items: center;
+}
+
+.flex-wrap {
+	flex-wrap: wrap;
+}
+
+@mixin box-shadow-social($color) {
+	border-radius: 40px;
+	box-shadow: 0px 0px 16px 3px rgba($color, 0.9);
 }

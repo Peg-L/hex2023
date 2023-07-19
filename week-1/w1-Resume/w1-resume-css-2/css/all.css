@@ -159,10 +159,6 @@ img {
   font-size: 20px;
 }
 
-.lh-1 {
-  line-height: 1.5;
-}
-
 .ls-1 {
   letter-spacing: 15.36px;
 }
@@ -172,7 +168,8 @@ img {
 }
 
 body {
-  font-family: Castoro;
+  font-family: Castoro, serif;
+  line-height: 1.5;
 }
 
 *,
@@ -227,6 +224,13 @@ body {
   color: #ae0000;
 }
 .content li:not(:first-child) {
+  margin-top: 16px;
+}
+
+.about-list:first-child .content li:not(:first-child) {
+  margin-top: 8px;
+}
+.about-list:last-child .content li:not(:first-child) {
   margin-top: 12px;
 }
 
