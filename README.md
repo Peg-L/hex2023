@@ -6,3 +6,7 @@
 
 - 個人履歷
 - Pixel Perfect Kata
+
+## week2
+
+- 個人網站
