@@ -62,8 +62,20 @@
 	align-items: center;
 }
 
+.align-items-start {
+	align-items: flex-start;
+}
+
+.self-end {
+	align-self: flex-end;
+}
+
 .flex-wrap {
 	flex-wrap: wrap;
+}
+
+.flex-column {
+	flex-direction: column;
 }
 
 @mixin box-shadow-social($color) {

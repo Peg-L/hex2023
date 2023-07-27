@@ -225,8 +225,20 @@ body {
   align-items: center;
 }
 
+.align-items-start {
+  align-items: flex-start;
+}
+
+.self-end {
+  align-self: flex-end;
+}
+
 .flex-wrap {
   flex-wrap: wrap;
+}
+
+.flex-column {
+  flex-direction: column;
 }
 
 .pt-1 {
@@ -262,18 +274,8 @@ body {
 .navbar {
   padding-top: 40px;
 }
-.navbar ul {
-  justify-content: space-between;
-}
 .navbar a:hover {
   color: #fff;
-}
-.navbar li:not(:last-child) {
-  width: 306px;
-}
-.navbar li:last-child {
-  width: 196px;
-  text-align: right;
 }
 
 .banner-intro {
@@ -281,8 +283,6 @@ body {
 }
 
 .contact-btn {
-  width: 186px;
-  margin-left: auto;
   transition: box-shadow 0.3s ease-in-out;
 }
 .contact-btn:hover {
@@ -396,7 +396,6 @@ body {
 }
 
 .seemore-btn {
-  width: 185px;
   transition: box-shadow 0.3s ease-in-out;
 }
 .seemore-btn:hover {

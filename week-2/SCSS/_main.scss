@@ -2,21 +2,8 @@
 .navbar {
 	padding-top: 40px;
 
-	ul {
-		justify-content: space-between;
-	}
-
 	a:hover {
 		color: $white;
-	}
-
-	li:not(:last-child) {
-		width: 306px;
-	}
-
-	li:last-child {
-		width: 196px;
-		text-align: right;
 	}
 }
 
@@ -26,8 +13,6 @@
 }
 
 .contact-btn {
-	width: 186px;
-	margin-left: auto;
 	transition: box-shadow 0.3s ease-in-out;
 
 	&:hover {
@@ -156,7 +141,6 @@
 }
 
 .seemore-btn {
-	width: 185px;
 	transition: box-shadow 0.3s ease-in-out;
 
 	&:hover {
