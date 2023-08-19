@@ -5,18 +5,20 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Week 1 Resume - 2</title>
 		<link rel="stylesheet" href="css/all.css" />
+		<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 	</head>
 	<body>
 		<div class="banner container">
-			<h1 class="fz-1 ls-1">VITO</h1>
+			<h1 data-aos="fade-up" class="fz-1 ls-1">VITO</h1>
 			<img
+				data-aos="fade-up"
 				src="https://github.com/hexschool/2022-web-layout-training/blob/main/2023week1/vito.png?raw=true"
 				alt="Vito" />
-			<h2 class="fz-1 ls-1 title">RESUME</h2>
+			<h2 data-aos="fade-up" class="fz-1 ls-1 title">RESUME</h2>
 		</div>
 		<div class="intro">
 			<div class="container">
-				<p class="fz-3">
+				<p data-aos="fade-up" class="fz-3">
 					I'm Vito, a UI Designer with 5+ years of experience. I create visually
 					appealing interfaces for web and mobile apps. Proficient in Sketch,
 					Adobe XD, Figma, HTML, CSS, and JavaScript. I enjoy collaborating with
@@ -27,17 +29,17 @@
 		<div class="container">
 			<ul class="about">
 				<li class="about-list">
-					<h3 class="fz-2 text-red">Vito Evans</h3>
-					<ul class="fz-4 content">
+					<h3 data-aos="fade-up" class="fz-2 text-red">Vito Evans</h3>
+					<ul data-aos="fade-up" class="fz-4 content">
 						<li><a href="###">456 Walnut Avenue, Someville, USA</a></li>
 						<li><a href="tel:+11234567890">+1 123 456 7890</a></li>
 						<li><a href="mailto:info@hexschool.com">info@hexschool.com</a></li>
 						<li><a href="###">www.infohexschool.com</a></li>
 					</ul>
 				</li>
-				<li class="about-list">
-					<h3 class="fz-2 text-red">Education</h3>
-					<ul class="fz-4 content">
+				<li data-aos="fade-up" class="about-list">
+					<h3 data-aos="fade-up" class="fz-2 text-red">Education</h3>
+					<ul data-aos="fade-up" class="fz-4 content">
 						<li>
 							<div class="time">2014-2018</div>
 							Bachelor of Science in Business Administration, University of
@@ -55,8 +57,8 @@
 					</ul>
 				</li>
 				<li class="about-list">
-					<h3 class="fz-2 text-red">Work</h3>
-					<ul class="fz-4 content">
+					<h3 data-aos="fade-up" class="fz-2 text-red">Work</h3>
+					<ul data-aos="fade-up" class="fz-4 content">
 						<li>
 							<div class="time">2018-2021</div>
 							Marketing Manager, ABC Company
@@ -72,8 +74,8 @@
 					</ul>
 				</li>
 				<li class="about-list">
-					<h3 class="fz-2 text-red">Awards</h3>
-					<ul class="fz-4 content">
+					<h3 data-aos="fade-up" class="fz-2 text-red">Awards</h3>
+					<ul data-aos="fade-up" class="fz-4 content">
 						<li>Best in Show Award, National Advertising Awards, 2020</li>
 						<li>Honorable Mention, International Design Competition, 2019</li>
 						<li>People's Choice Award, Local Art Exhibition, 2018</li>
@@ -84,21 +86,21 @@
 
 		<footer>
 			<ul class="social-btns">
-				<li class="social-btn">
+				<li data-aos="zoom-in-left" class="social-btn">
 					<a href="###">
 						<img
 							src="https://github.com/hexschool/2022-web-layout-training/blob/main/2023week1/fb.png?raw=true"
 							alt="Facebook link" />
 					</a>
 				</li>
-				<li class="social-btn">
+				<li data-aos="zoom-in-up" class="social-btn">
 					<a href="###">
 						<img
 							src="https://github.com/hexschool/2022-web-layout-training/blob/main/2023week1/instagram.png?raw=true"
 							alt="Instagram Link" />
 					</a>
 				</li>
-				<li class="social-btn">
+				<li data-aos="zoom-in-right" class="social-btn">
 					<a href="###">
 						<img
 							src="https://github.com/hexschool/2022-web-layout-training/blob/main/2023week1/line.png?raw=true"
@@ -107,5 +109,32 @@
 				</li>
 			</ul>
 		</footer>
+		<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+		<script>
+			AOS.init();
+
+			// You can also pass an optional settings object
+			// below listed default settings
+			AOS.init({
+				// Global settings:
+				disable: false, // accepts following values: 'phone', 'tablet', 'mobile', boolean, expression or function
+				startEvent: "DOMContentLoaded", // name of the event dispatched on the document, that AOS should initialize on
+				initClassName: "aos-init", // class applied after initialization
+				animatedClassName: "aos-animate", // class applied on animation
+				useClassNames: false, // if true, will add content of `data-aos` as classes on scroll
+				disableMutationObserver: false, // disables automatic mutations' detections (advanced)
+				debounceDelay: 50, // the delay on debounce used while resizing window (advanced)
+				throttleDelay: 99, // the delay on throttle used while scrolling the page (advanced)
+
+				// Settings that can be overridden on per-element basis, by `data-aos-*` attributes:
+				offset: 120, // offset (in px) from the original trigger point
+				delay: 0, // values from 0 to 3000, with step 50ms
+				duration: 400, // values from 0 to 3000, with step 50ms
+				easing: "ease", // default easing for AOS animations
+				once: false, // whether animation should happen only once - while scrolling down
+				mirror: false, // whether elements should animate out while scrolling past them
+				anchorPlacement: "top-bottom", // defines which position of the element regarding to window should trigger the animation
+			});
+		</script>
 	</body>
 </html>
